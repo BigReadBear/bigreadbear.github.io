@@ -1,12 +1,14 @@
 <!doctype html>
+<!most of the "bugs" from the bug finder were about bogus comments because of a space after the identifier>
+<!forgot title as child element nested in head element, fixed> 
+
 <html lang="en">
-    <header>Assignment 01</header>
+    <head><title>Assignment 01</head></title>
   
     <body>
-    <! Image from the image folder>
-    <img src="https://bigreadbear.github.io/images/big read bear.jfif" alt="Big Read Bear" width="500" height="500">
+    <!Image from the image folder>
+    <img src="https://bigreadbear.github.io/images/big read bear.jfif" alt="Big Read Bear" width="500" height="500"> <! illigal path bacause of the space but github wouldnt let me change the name of the file and it works>
         
-    
     <article> <!semantic identifier to signal the start of the article>
     
     <aside>   <!semantic identifier to signal not so important information>
@@ -14,7 +16,7 @@
     <code>&lt;html&gt;&lt;body&gt;&lt;h1&gt;Assignment 01&lt;/h1&gt;&lt;img src=&quot;https://bigreadbear.github.io/images/big read bear.jfif&quot; alt=&quot;Big Read Bear&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;&lt;img src=&quot;https://via.placeholder.com/500&quot;    width=&quot;500&quot; height=&quot;500&quot;&gt;&lt;/body&gt;&lt;/html&gt;</code>
     </aside>
     
-    <section> <! Form section>
+    <section> <!Form section>
       <h3>This is a basic form</h3>
     <form action="https://bigreadbear.github.io">
   <label for="fname">First name:</label><br>
@@ -24,7 +26,7 @@
   <input type="submit" value="Submit">
 </form> 
     </section>
-    <section> <! Table section>
+    <section> <!Table section>
     <table>
   <tr>
     <th>Company</th>
@@ -63,8 +65,9 @@
   </tr>
 </table>
     </section>
-        <img src="https://via.placeholder.com/500"    width="500" height="500"> <! Thought this looked better at the bottom of the page>
+        <img src="https://via.placeholder.com/500"    width="500" height="500"> <!Thought this looked better at the bottom of the page> 
+        <!should have an alt value but its a placeholder so i didnt think it would matter>
     </article>
     </body>
-    <footer> I hope you enjoyed my little asisgnment</footer> <! goodbye note at the bottom>
+    <footer> I hope you enjoyed my little asisgnment</footer> <!goodbye note at the bottom>
 </html>
