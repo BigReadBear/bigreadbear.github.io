@@ -1,100 +1,120 @@
-/* --- put your css here --- */ 
-
-/* external css is imported into html using the <link> tag in the <head> section, as shown below.
-
-  <head>
-    <link rel="stylesheet" href="assignment02.css">
-  </head>
-
+/*
+@author Jarno Pomstra
+Purpose: CSS that relates to assignment02
 */
+
 body {
-  background-color:skyblue;
+	background-color: skyblue;
 }
 
 #igottabeme {
-  font-family: Arial, Helvetica, sans-serif; 
+	font-family: arial, helvetica, sans-serif;
+	/*font familyu incasea browser doesnt support one*/
 }
 
-.classy{
-  margin-left: 10px;
+.classy {
+	margin-left: 10px;
 }
 
 
 /* Part B */
+
 div {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 span {
-  width: 100px;
-  height: 50px;
-  padding: 5px 20px;
-  border: 5px solid blue;
-  background-color: yellow;
+	width: 100px;
+	height: 50px;
+	padding: 5px 20px;
+	border: 5px solid blue;
+	background-color: yellow;
 }
 
 span.a {
-  display: inline;
+	display: inline;
+	/*default*/
 }
 
-span.b{
-  display: block;
+span.b {
+	display: block;
+	/*stacked*/
 }
 
-span.c{
-  display: inline-block;
+span.c {
+	display: inline-block;
 }
+
+
 /* Part C */
+
+
 /* CSS that applies to the cat icon using the attribute selector */
-img[alt = "cat icon"]{
-  position: fixed; 
-  bottom: 0px; right: 0px;
+
+img[alt="cat icon"] {
+	position: fixed;
+	/*fixed at bottom right*/
+	bottom: 0px;
+	right: 0px;
 }
+
 
 /* CSS that applies to the dog icon using the attribute selector */
-img[alt = "dog icon"]{
-  position: relative;
-  right: 50px;
-  bottom: 150px; 
-}
-/* Problematic parent-child bug */
-div > img{
-  position: absolute;
-  top: 50px;
-  left: 250px;
+
+img[alt="dog icon"] {
+	position: relative;
+	right: 50px;
+	bottom: 150px;
 }
 
-/*  CSS thatapplies to the navigation bar  */
-nav {
-  background-color: rgba(45, 245, 0, 0.9); /*Used hexcolortool.com to try and get the color showed in the result for assignment02, including the opacity */
-  padding: 5px;
-  font-size: 20px;
-  overflow: hidden;
-  position: sticky; 
-  top: 0;
+
+/* Problematic parent-child bug */
+
+div>img {
+	position: absolute;
+	top: 50px;
+	left: 250px;
 }
+
+
+/*  CSS thatapplies to the navigation bar  */
+
+nav {
+	background-color: rgba(45, 245, 0, 0.9);
+	/*Used hexcolortool.com to try and get the color showed in the result for assignment02, including the opacity */
+	padding: 5px;
+	font-size: 20px;
+	overflow: hidden;
+	position: sticky;
+	/* Using sticky because it looked way better  than fixed*/
+	top: 0px;
+	/* Nescessary to keep the nav at the top of the browser window*/
+}
+
 
 /* --- pre-existing css --- */
 
-
-
-
 .stripey tr:nth-child(even) {
-  background-color: gray;
+	background-color: gray;
 }
+
 .stripey tr:nth-child(odd) {
-  background-color: white;
+	background-color: white;
 }
+
 .stripey th {
-  color: white;
-  background-color: black;
+	color: white;
+	background-color: black;
 }
+
 .mousey td:hover {
-  background-color: yellow;
+	background-color: yellow;
 }
+
 .rightey td {
-  text-align: right;
+	text-align: right;
 }
+
 input[type="text"].pinkey:focus {
-  background-color: pink;
+	background-color: pink;
 }
