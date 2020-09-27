@@ -50,7 +50,7 @@ img[alt = "cat icon"]{
 
 img[alt = "dog icon"]{
   position: relative;
-  right; 50px;
+  right: 50px;
   bottom: 150px; 
 }
 
