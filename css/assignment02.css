@@ -19,6 +19,8 @@ body {
   margin-left: 10px;
 }
 
+
+/* Part B */
 div {
   margin-bottom: 50px;
 }
@@ -42,31 +44,33 @@ span.b{
 span.c{
   display: inline-block;
 }
-
+/* Part C */
+/* CSS that applies to the cat icon using the attribute selector */
 img[alt = "cat icon"]{
   position: fixed; 
   bottom: 0px; right: 0px;
 }
 
+/* CSS that applies to the dog icon using the attribute selector */
 img[alt = "dog icon"]{
   position: relative;
   right: 50px;
   bottom: 150px; 
 }
-
+/* Problematic parent-child bug */
 div > img{
   position: absolute;
   top: 50px;
   left: 250px;
 }
 
+/*  CSS thatapplies to the navigation bar  */
 nav {
-  background-color: lime;
-  opacity: 90%;
+  background-color: rgba(45, 245, 0, 0.9); /*Used hexcolortool.com to try and get the color showed in the result for assignment02, including the opacity */
   padding: 5px;
   font-size: 20px;
   overflow: hidden;
-  position: sticky;
+  position: sticky; 
   top: 0;
 }
 
