@@ -68,8 +68,11 @@ img[alt="dog icon"] {
 }
 
 
-/* Problematic parent-child bug */
-
+/* Position the parent div first */
+#positionMe{
+  position: relative;
+}
+/* Positionig img in the parent div and positioning it according to the assignment */
 div>img {
 	position: absolute;
 	top: 50px;
