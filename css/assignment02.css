@@ -71,6 +71,7 @@ img[alt="dog icon"] {
 /* Position the parent div first */
 #positionMe{
   position: relative;
+  background-color: orange; /*Change the background to orange in accordance with the assignment*/
 }
 /* Positionig img in the parent div and positioning it according to the assignment */
 div>img {
