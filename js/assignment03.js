@@ -36,13 +36,12 @@ elem[17]
   = document.getElementById("17");
 elem[18]
   = document.getElementById("18");
-elem[19]
-  = document.getElementById("totals");
+
 
 
 // assign a function to the + button
 elem[1].children[4].children[0].onclick 
-  = function(){add1(elem[1]); over(elem[1]); total()};
+  = function(){add1(elem[1]); over(elem[1])};
 elem[2].children[4].children[0].onclick 
   = function(){add1(elem[2]); over(elem[2])};
 elem[3].children[4].children[0].onclick 
@@ -115,9 +114,6 @@ elem[17].children[4].children[1].onclick
   = function(){dec1(elem[17]); over(elem[17])};
 elem[18].children[4].children[1].onclick 
   = function(){dec1(elem[18]); over(elem[18])};
-
-//assign value to over function 
-over(elem[1]);
 
 // create an "add1" function
 function add1 (elem) {
