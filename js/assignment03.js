@@ -154,23 +154,23 @@ function over (elem) {
   }
 }
 
-//create total function
-function total(){
-  let totalPar;
-  let totalScore;
-  let totalOver;
+// //create total function
+// function total(){
+//   let totalPar;
+//   let totalScore;
+//   let totalOver;
   
-  for(let i= 1; i <= 18; i++){
-    if (elem[i].children[2] != "-"){
-      totalPar = elem[i].children[1];
-      totalScore = elem[i].children[2];
-      totalOver  = elem[i].children[3];
-    }
-  }
-  totalScore = Number.parseInt(totalScore);
-  totalPar = Number.parseInt(totalPar);
-  totalOver = Number.parseInt(totalOver);
-  elem[19].children[1].innerHTML= totalPar;
-  elem[19].children[2].innerHTML= totalScore;
-  elem[19].children[3].innerHTML= totalOver;
-}
+//   for(let i= 1; i <= 18; i++){
+//     if (elem[i].children[2] != "-"){
+//       totalPar = elem[i].children[1];
+//       totalScore = elem[i].children[2];
+//       totalOver  = elem[i].children[3];
+//     }
+//   }
+//   totalScore = Number.parseInt(totalScore);
+//   totalPar = Number.parseInt(totalPar);
+//   totalOver = Number.parseInt(totalOver);
+//   elem[19].children[1].innerHTML= totalPar;
+//   elem[19].children[2].innerHTML= totalScore;
+//   elem[19].children[3].innerHTML= totalOver;
+// }
