@@ -42,7 +42,7 @@ elem[19]
 
 // assign a function to the + button
 elem[1].children[4].children[0].onclick 
-  = function(){add1(elem[1]); over(elem[1])};
+  = function(){add1(elem[1]); over(elem[1]); total()};
 elem[2].children[4].children[0].onclick 
   = function(){add1(elem[2]); over(elem[2])};
 elem[3].children[4].children[0].onclick 
