@@ -41,79 +41,79 @@ elem[18]
 
 // assign a function to the + button
 elem[1].children[4].children[0].onclick 
-  = function(){add1(elem[1]); over(elem[1])};
+  = function(){add1(elem[1]); over(elem[1]);};
 elem[2].children[4].children[0].onclick 
-  = function(){add1(elem[2]); over(elem[2])};
+  = function(){add1(elem[2]); over(elem[2]);};
 elem[3].children[4].children[0].onclick 
-  = function(){add1(elem[3]); over(elem[3])};
+  = function(){add1(elem[3]); over(elem[3]);};
 elem[4].children[4].children[0].onclick 
-  = function(){add1(elem[4]); over(elem[4])};
+  = function(){add1(elem[4]); over(elem[4]);};
 elem[5].children[4].children[0].onclick 
-  = function(){add1(elem[5]); over(elem[5])};
+  = function(){add1(elem[5]); over(elem[5]);};
 elem[6].children[4].children[0].onclick 
-  = function(){add1(elem[6]); over(elem[6])};
+  = function(){add1(elem[6]); over(elem[6]);};
 elem[7].children[4].children[0].onclick 
-  = function(){add1(elem[7]); over(elem[7])};
+  = function(){add1(elem[7]); over(elem[7]);};
 elem[8].children[4].children[0].onclick 
-  = function(){add1(elem[8]); over(elem[8])};
+  = function(){add1(elem[8]); over(elem[8]);};
 elem[9].children[4].children[0].onclick 
-  = function(){add1(elem[9]); over(elem[9])};
+  = function(){add1(elem[9]); over(elem[9]);};
 elem[10].children[4].children[0].onclick 
-  = function(){add1(elem[10]); over(elem[10])};
+  = function(){add1(elem[10]); over(elem[10]);};
 elem[11].children[4].children[0].onclick 
-  = function(){add1(elem[11]); over(elem[11])};
+  = function(){add1(elem[11]); over(elem[11]);};
 elem[12].children[4].children[0].onclick 
-  = function(){add1(elem[12]); over(elem[12])};
+  = function(){add1(elem[12]); over(elem[12]);};
 elem[13].children[4].children[0].onclick 
-  = function(){add1(elem[13]); over(elem[13])};
+  = function(){add1(elem[13]); over(elem[13]);};
 elem[14].children[4].children[0].onclick 
-  = function(){add1(elem[14]); over(elem[14])};
+  = function(){add1(elem[14]); over(elem[14]);};
 elem[15].children[4].children[0].onclick 
-  = function(){add1(elem[15]); over(elem[15])};
+  = function(){add1(elem[15]); over(elem[15]);};
 elem[16].children[4].children[0].onclick 
-  = function(){add1(elem[16]); over(elem[16])};
+  = function(){add1(elem[16]); over(elem[16]);};
 elem[17].children[4].children[0].onclick 
-  = function(){add1(elem[17]); over(elem[17])};
+  = function(){add1(elem[17]); over(elem[17]);};
 elem[18].children[4].children[0].onclick 
-  = function(){add1(elem[18]); over(elem[18])};
+  = function(){add1(elem[18]); over(elem[18]);};
 
 // assign a function to the - button
 elem[1].children[4].children[1].onclick 
-  = function(){dec1(elem[1]); over(elem[1])};
+  = function(){dec1(elem[1]); over(elem[1]);};
 elem[2].children[4].children[1].onclick 
-  = function(){dec1(elem[2]); over(elem[2])};
+  = function(){dec1(elem[2]); over(elem[2]);};
 elem[3].children[4].children[1].onclick 
-  = function(){dec1(elem[3]); over(elem[3])};
+  = function(){dec1(elem[3]); over(elem[3]);};
 elem[4].children[4].children[1].onclick 
-  = function(){dec1(elem[4]); over(elem[4])};
+  = function(){dec1(elem[4]); over(elem[4]);};
 elem[5].children[4].children[1].onclick 
-  = function(){dec1(elem[5]); over(elem[5])};
+  = function(){dec1(elem[5]); over(elem[5]);};
 elem[6].children[4].children[1].onclick 
-  = function(){dec1(elem[6]); over(elem[6])};
+  = function(){dec1(elem[6]); over(elem[6]);};
 elem[7].children[4].children[1].onclick 
-  = function(){dec1(elem[7]); over(elem[7])};
+  = function(){dec1(elem[7]); over(elem[7]);};
 elem[8].children[4].children[1].onclick 
-  = function(){dec1(elem[8]); over(elem[8])};
+  = function(){dec1(elem[8]); over(elem[8]);};
 elem[9].children[4].children[1].onclick 
-  = function(){dec1(elem[9]); over(elem[9])};
+  = function(){dec1(elem[9]); over(elem[9]);};
 elem[10].children[4].children[1].onclick 
-  = function(){dec1(elem[10]); over(elem[10])};
+  = function(){dec1(elem[10]); over(elem[10]);};
 elem[11].children[4].children[1].onclick 
-  = function(){dec1(elem[11]); over(elem[11])};
+  = function(){dec1(elem[11]); over(elem[11]);};
 elem[12].children[4].children[1].onclick 
-  = function(){dec1(elem[12]); over(elem[12])};
+  = function(){dec1(elem[12]); over(elem[12]);};
 elem[13].children[4].children[1].onclick 
-  = function(){dec1(elem[13]); over(elem[13])};
+  = function(){dec1(elem[13]); over(elem[13]);};
 elem[14].children[4].children[1].onclick 
-  = function(){dec1(elem[14]); over(elem[14])};
+  = function(){dec1(elem[14]); over(elem[14]);};
 elem[15].children[4].children[1].onclick 
-  = function(){dec1(elem[15]); over(elem[15])};
+  = function(){dec1(elem[15]); over(elem[15]);};
 elem[16].children[4].children[1].onclick 
-  = function(){dec1(elem[16]); over(elem[16])};
+  = function(){dec1(elem[16]); over(elem[16]);};
 elem[17].children[4].children[1].onclick 
-  = function(){dec1(elem[17]); over(elem[17])};
+  = function(){dec1(elem[17]); over(elem[17]);};
 elem[18].children[4].children[1].onclick 
-  = function(){dec1(elem[18]); over(elem[18])};
+  = function(){dec1(elem[18]); over(elem[18]);};
 
 // create an "add1" function
 function add1 (elem) {
