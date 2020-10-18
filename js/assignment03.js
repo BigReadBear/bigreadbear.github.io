@@ -117,8 +117,9 @@ elem[18].children[4].children[1].onclick
 
 // create an "add1" function
 function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
+  if(elem.children[2].innerHTML == "-") {
     elem.children[2].innerHTML = "1";
+  }
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
@@ -128,8 +129,9 @@ function add1 (elem) {
 
 // create an dec1 function 
 function dec1 (elem) {
-  if(elem.children[2].innerHTML <= "1") 
+  if(elem.children[2].innerHTML <= "1") {
     elem.children[2].innerHTML = "-";
+  }
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
@@ -141,10 +143,11 @@ function dec1 (elem) {
 function over (elem) {
   let currentPar = elem.children[1].innerHTML;
   let currentScore = elem.children[2].innerHTML;
-  if((currentScore == "-") || (currentScore < 0)) 
+  if((currentScore == "-") || (currentScore < 0)) {
     elem.children[3].innerHTML = 0;
+  }
   else {
-    currentPar = Number.parseInt(currentPar)
+    currentPar = Number.parseInt(currentPar);
     currentScore = Number.parseInt(currentScore);
     elem.children[3].innerHTML = currentScore-currentPar;
   }
