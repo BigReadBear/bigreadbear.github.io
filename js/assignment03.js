@@ -115,6 +115,44 @@ elem[17].children[4].children[1].onclick
 elem[18].children[4].children[1].onclick 
   = function(){dec1(elem[18]); over(elem[18]);};
 
+//C button
+elem[1].children[4].children[2].onclick
+  = function(){clearScore(elem[1]); clearOver(elem[1])};
+elem[2].children[4].children[2].onclick
+  = function(){clearScore(elem[2]); clearOver(elem[2])};
+elem[3].children[4].children[2].onclick
+  = function(){clearScore(elem[3]); clearOver(elem[3])};
+elem[4].children[4].children[2].onclick
+  = function(){clearScore(elem[4]); clearOver(elem[4])};
+elem[5].children[4].children[2].onclick
+  = function(){clearScore(elem[5]); clearOver(elem[5])};
+elem[6].children[4].children[2].onclick
+  = function(){clearScore(elem[6]); clearOver(elem[6])};
+elem[7].children[4].children[2].onclick
+  = function(){clearScore(elem[7]); clearOver(elem[7])};
+elem[8].children[4].children[2].onclick
+  = function(){clearScore(elem[8]); clearOver(elem[8])};
+elem[9].children[4].children[2].onclick
+  = function(){clearScore(elem[9]); clearOver(elem[9])};
+elem[10].children[4].children[2].onclick
+  = function(){clearScore(elem[10]); clearOver(elem[10])};
+elem[11].children[4].children[2].onclick
+  = function(){clearScore(elem[11]); clearOver(elem[11])};
+elem[12].children[4].children[2].onclick
+  = function(){clearScore(elem[12]); clearOver(elem[12])};
+elem[13].children[4].children[2].onclick
+  = function(){clearScore(elem[13]); clearOver(elem[13])};
+elem[14].children[4].children[2].onclick
+  = function(){clearScore(elem[14]); clearOver(elem[14])};
+elem[15].children[4].children[2].onclick
+  = function(){clearScore(elem[15]); clearOver(elem[15])};
+elem[16].children[4].children[2].onclick
+  = function(){clearScore(elem[16]); clearOver(elem[16])};
+elem[17].children[4].children[2].onclick
+  = function(){clearScore(elem[17]); clearOver(elem[17])};
+elem[18].children[4].children[2].onclick
+  = function(){clearScore(elem[18]); clearOver(elem[18])};
+
 // create an "add1" function
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") {
@@ -151,3 +189,13 @@ function over (elem) {
     elem.children[3].innerHTML = currentScore-currentPar;
   }
 }
+
+//clear function
+function clearScore (elem) {
+  elem.children[2].innerHTML = "-";
+}
+
+function clearOver (elem) {
+  elem.children[3].innerHTML = "-";
+}
+
