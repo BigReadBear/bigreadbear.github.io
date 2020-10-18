@@ -143,11 +143,10 @@ function dec1 (elem) {
 function over (elem) {
   let currentPar = elem.children[1].innerHTML;
   let currentScore = elem.children[2].innerHTML;
-  if((currentScore == "-") || (currentScore < 0)) {
-    elem.children[3].innerHTML = 0;
-  }
+  if((currentScore == "-") || (currentScore < 0)) 
+    elem.children[3].innerHTML = "-";
   else {
-    currentPar = Number.parseInt(currentPar);
+    currentPar = Number.parseInt(currentPar)
     currentScore = Number.parseInt(currentScore);
     elem.children[3].innerHTML = currentScore-currentPar;
   }
