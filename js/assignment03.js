@@ -283,7 +283,7 @@ function total() {
   let totalOver = 0;
 
   for (let i = 1; i <= 18; i++) {
-    if (!isNaN(elem[i].children[2])) {
+    if (!isNaN(elem[i].children[2].innerHTML)) {
       totalPar += Number.parseInt(elem[i].children[1].innerHTML);
       totalScore += Number.parseInt(elem[i].children[2].innerHTML);
       totalOver += Number.parseInt(elem[i].children[3].innerHTML);
