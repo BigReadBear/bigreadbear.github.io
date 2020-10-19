@@ -29,70 +29,87 @@ elem[1].children[4].children[0].onclick = function () {
 elem[2].children[4].children[0].onclick = function () {
   add1(elem[2]);
   over(elem[2]);
+  total();
 };
 elem[3].children[4].children[0].onclick = function () {
   add1(elem[3]);
   over(elem[3]);
+  total();
 };
 elem[4].children[4].children[0].onclick = function () {
   add1(elem[4]);
   over(elem[4]);
+  total();
 };
 elem[5].children[4].children[0].onclick = function () {
   add1(elem[5]);
   over(elem[5]);
+  total();
 };
 elem[6].children[4].children[0].onclick = function () {
   add1(elem[6]);
   over(elem[6]);
+  total();
 };
 elem[7].children[4].children[0].onclick = function () {
   add1(elem[7]);
   over(elem[7]);
+  total();
 };
 elem[8].children[4].children[0].onclick = function () {
   add1(elem[8]);
   over(elem[8]);
+  total();
 };
 elem[9].children[4].children[0].onclick = function () {
   add1(elem[9]);
   over(elem[9]);
+  total();
 };
 elem[10].children[4].children[0].onclick = function () {
   add1(elem[10]);
   over(elem[10]);
+  total();
 };
 elem[11].children[4].children[0].onclick = function () {
   add1(elem[11]);
   over(elem[11]);
+  total();
 };
 elem[12].children[4].children[0].onclick = function () {
   add1(elem[12]);
   over(elem[12]);
+  total();
 };
 elem[13].children[4].children[0].onclick = function () {
   add1(elem[13]);
   over(elem[13]);
+  total();
 };
 elem[14].children[4].children[0].onclick = function () {
   add1(elem[14]);
   over(elem[14]);
+  total();
 };
 elem[15].children[4].children[0].onclick = function () {
   add1(elem[15]);
   over(elem[15]);
+  total();
 };
 elem[16].children[4].children[0].onclick = function () {
   add1(elem[16]);
   over(elem[16]);
+  total();
 };
 elem[17].children[4].children[0].onclick = function () {
   add1(elem[17]);
   over(elem[17]);
+  total();
 };
 elem[18].children[4].children[0].onclick = function () {
   add1(elem[18]);
   over(elem[18]);
+  total();
 };
 
 // assign a function to the - button
@@ -104,144 +121,179 @@ elem[1].children[4].children[1].onclick = function () {
 elem[2].children[4].children[1].onclick = function () {
   dec1(elem[2]);
   over(elem[2]);
+  total();
 };
 elem[3].children[4].children[1].onclick = function () {
   dec1(elem[3]);
   over(elem[3]);
+  total();
 };
 elem[4].children[4].children[1].onclick = function () {
   dec1(elem[4]);
   over(elem[4]);
+  total();
 };
 elem[5].children[4].children[1].onclick = function () {
   dec1(elem[5]);
   over(elem[5]);
+  total();
 };
 elem[6].children[4].children[1].onclick = function () {
   dec1(elem[6]);
   over(elem[6]);
+  total();
 };
 elem[7].children[4].children[1].onclick = function () {
   dec1(elem[7]);
   over(elem[7]);
+  total();
 };
 elem[8].children[4].children[1].onclick = function () {
   dec1(elem[8]);
   over(elem[8]);
+  total();
 };
 elem[9].children[4].children[1].onclick = function () {
   dec1(elem[9]);
   over(elem[9]);
+  total();
 };
 elem[10].children[4].children[1].onclick = function () {
   dec1(elem[10]);
   over(elem[10]);
+  total();
 };
 elem[11].children[4].children[1].onclick = function () {
   dec1(elem[11]);
   over(elem[11]);
+  total();
 };
 elem[12].children[4].children[1].onclick = function () {
   dec1(elem[12]);
   over(elem[12]);
+  total();
 };
 elem[13].children[4].children[1].onclick = function () {
   dec1(elem[13]);
   over(elem[13]);
+  total();
 };
 elem[14].children[4].children[1].onclick = function () {
   dec1(elem[14]);
   over(elem[14]);
+  total();
 };
 elem[15].children[4].children[1].onclick = function () {
   dec1(elem[15]);
   over(elem[15]);
+  total();
 };
 elem[16].children[4].children[1].onclick = function () {
   dec1(elem[16]);
   over(elem[16]);
+  total();
 };
 elem[17].children[4].children[1].onclick = function () {
   dec1(elem[17]);
   over(elem[17]);
+  total();
 };
 elem[18].children[4].children[1].onclick = function () {
   dec1(elem[18]);
   over(elem[18]);
+  total();
 };
 
 //C button
 elem[1].children[4].children[2].onclick = function () {
   clearScore(elem[1]);
   clearOver(elem[1]);
+  total();
 };
 elem[2].children[4].children[2].onclick = function () {
   clearScore(elem[2]);
   clearOver(elem[2]);
+  total();
 };
 elem[3].children[4].children[2].onclick = function () {
   clearScore(elem[3]);
   clearOver(elem[3]);
+  total();
 };
 elem[4].children[4].children[2].onclick = function () {
   clearScore(elem[4]);
   clearOver(elem[4]);
+  total();
 };
 elem[5].children[4].children[2].onclick = function () {
   clearScore(elem[5]);
   clearOver(elem[5]);
+  total();
 };
 elem[6].children[4].children[2].onclick = function () {
   clearScore(elem[6]);
   clearOver(elem[6]);
+  total();
 };
 elem[7].children[4].children[2].onclick = function () {
   clearScore(elem[7]);
   clearOver(elem[7]);
+  total();
 };
 elem[8].children[4].children[2].onclick = function () {
   clearScore(elem[8]);
   clearOver(elem[8]);
+  total();
 };
 elem[9].children[4].children[2].onclick = function () {
   clearScore(elem[9]);
   clearOver(elem[9]);
+  total();
 };
 elem[10].children[4].children[2].onclick = function () {
   clearScore(elem[10]);
   clearOver(elem[10]);
+  total();
 };
 elem[11].children[4].children[2].onclick = function () {
   clearScore(elem[11]);
   clearOver(elem[11]);
+  total();
 };
 elem[12].children[4].children[2].onclick = function () {
   clearScore(elem[12]);
   clearOver(elem[12]);
+  total();
 };
 elem[13].children[4].children[2].onclick = function () {
   clearScore(elem[13]);
   clearOver(elem[13]);
+  total();
 };
 elem[14].children[4].children[2].onclick = function () {
   clearScore(elem[14]);
   clearOver(elem[14]);
+  total();
 };
 elem[15].children[4].children[2].onclick = function () {
   clearScore(elem[15]);
   clearOver(elem[15]);
+  total();
 };
 elem[16].children[4].children[2].onclick = function () {
   clearScore(elem[16]);
   clearOver(elem[16]);
+  total();
 };
 elem[17].children[4].children[2].onclick = function () {
   clearScore(elem[17]);
   clearOver(elem[17]);
+  total();
 };
 elem[18].children[4].children[2].onclick = function () {
   clearScore(elem[18]);
   clearOver(elem[18]);
+  total();
 };
 
 // create an "add1" function
