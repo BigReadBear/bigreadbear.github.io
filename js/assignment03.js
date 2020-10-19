@@ -276,27 +276,23 @@ function over(elem) {
   }
 }
 
-//create total function
+//create total function (couldnt get it to work)
 function total() {
   let totalPar = 0;
   let totalScore = 0;
   let totalOver = 0;
 
   for (let i = 1; i <= 18; i++) {
-    if (Number.isNaN(elem[i].children[2])) {
-      totalPar = totalPar;
-      totalScore = totalScore;
-      totalOver = totalOver;
-    } else {
+    if (!isNaN(elem[i].children[2])) {
       totalPar += Number.parseInt(elem[i].children[1].innerHTML);
       totalScore += Number.parseInt(elem[i].children[2].innerHTML);
       totalOver += Number.parseInt(elem[i].children[3].innerHTML);
-    }
+    } 
+  }
     elem[19].children[1].innerHTML = totalPar;
     elem[19].children[2].innerHTML = totalScore;
     elem[19].children[3].innerHTML = totalOver;
   }
-}
 
 //clear function
 function clearScore(elem) {
