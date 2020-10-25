@@ -91,7 +91,7 @@ function displayClubDistanceEntryForm(c) {
 
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
-//	window.location.href = "clubs = JSON.parse(localStorage.getItem("clubs")); https://bigreadbear.github.io/assignments/assignment04/clubDistanceList.html";
+window.location.href = "clubs = JSON.parse(localStorage.getItem("clubs"));clubDistanceList.html";
 }
 
 // create a new (default) "clubs" array
