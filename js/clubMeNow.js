@@ -122,7 +122,7 @@ function resetAllClubDistances() {
 	let str = JSON.stringify(clubs);
 	localStorage.setItem("clubs", str);
 	// and refresh screen
-	window.location.href = "clubDistanceList.html"; 
+	window.location.href = "clubs = JSON.parse(localStorage.getItem("clubs"));clubDistanceList.html"; 
 }
 
 // navigate to "About" screen
