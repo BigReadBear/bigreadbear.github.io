@@ -27,17 +27,23 @@ clubDistanceEntry.html
 
 // ----- Functions (clubDistanceList.html) -----
 
+//create a global variable for the undo button
+let tempClubs = " ";
+// add tempClubs = JSON.parse(localStorage.getItem("clubs")); to every function to store the temp array incase the undo button is pressed that temp array is called
+
 // initialize "clubs" array
 function loadClubDistances() {
 	let clubs;
 	// if "clubs" array already exists, load it from local storage
 	if (localStorage.getItem("clubs")) {
 		clubs = JSON.parse(localStorage.getItem("clubs"));
+		tempClubs = JSON.parse(localStorage.getItem("clubs"));
 	}
 	// otherwise create new "clubs" array, using resetAllClubs()
 	else {
 		clubs = resetAllClubDistances();
 		clubs = JSON.parse(localStorage.getItem("clubs"));
+		tempClubs = JSON.parse(localStorage.getItem("clubs"));
 	}
 	return clubs;
 }
@@ -87,12 +93,13 @@ function displayClubEntry() {
 function displayClubDistanceEntryForm(c) {
 	localStorage.setItem("club", c); // save chosen club
 	window.location.href = "https://bigreadbear.github.io/assignments/assignment04/clubDistanceEntry.html"; // redirect to entry form
+	tempClubs = JSON.parse(localStorage.getItem("clubs"));
 }
 
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
 	
-	clubs = JSON.parse(localStorage.getItem("club", c));
+	clubs = JSON.parse(localStorage.getItem("tempClubs"));
 	window.location.href = "clubDistanceList.html";
 }
 
@@ -102,6 +109,7 @@ function resetAllClubDistances() {
 	// columns - 0: sortPosition, 1: clubAbbrev, 2: clubName, 
 	// 3: avgDist, 4: minDist, 5: maxDist, 6: numOfShots, 
 	// 7: loft/degrees, 8: typical/men, 9: typical/women
+	tempClubs = JSON.parse(localStorage.getItem("clubs"));
 	let clubs = [
 		[ 199, "Dr",  "Driver",   0, 0, 0, 0, 10.5, 230, 200],
 		[ 300, "3+w", "3+ wood",  0, 0, 0, 0, 13.5, 210, 180],
@@ -150,6 +158,7 @@ function populateStatsTable() {
 
 // show fast-entry buttons in decrements of 5 yards
 function appendTapEntryButtons() {
+	tempClubs = JSON.parse(localStorage.getItem("clubs"));
 	// select whole cmn_tapEntry div
 	let teDiv = document.getElementById('cmn_tapEntryButtons'); 
 	// set reasonable range for tapEntry buttons
@@ -175,6 +184,7 @@ function appendTapEntryButtons() {
 
 // update distances based on user-entered value, "shotDistance"
 function updateStats(shotDistance=0) {
+	tempClubs = JSON.parse(localStorage.getItem("clubs"));
 	// shotDistance can be user-entered by fast-entry button or by typed input
 	// if shotDistance==0 then shotDistance was entered by typed input,
 	// so must pull shotValue from getElementById('clubVal')
