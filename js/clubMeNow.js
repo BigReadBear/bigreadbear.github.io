@@ -91,7 +91,8 @@ function displayClubDistanceEntryForm(c) {
 
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
-	clubs = JSON.parse(localStorage.getItem("clubsUndo"));
+	let str = JSON.parse(localStorage.getItem("clubsUndo"));
+	localStorage.setItem("clubs", str);
 	window.location.href = "clubDistanceList.html"; //reload the page
 }
 
@@ -174,7 +175,6 @@ function appendTapEntryButtons() {
 
 // update distances based on user-entered value, "shotDistance"
 function updateStats(shotDistance=0) {
-	tempClubs = JSON.parse(localStorage.getItem("clubs"));
 	// shotDistance can be user-entered by fast-entry button or by typed input
 	// if shotDistance==0 then shotDistance was entered by typed input,
 	// so must pull shotValue from getElementById('clubVal')
