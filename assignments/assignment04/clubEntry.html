@@ -54,6 +54,8 @@
 	let input = document.getElementById("clubName").value;
         let club = [2000, "ip",  input, 0, 0, 0, 0, 70.0,  60,  40];
 	clubs.push(club);
+	let str = JSON.stringify(clubs);
+	localStorage.setItem("clubs", str);
 	}
 	
 	// navigate to club distance LIST screen
