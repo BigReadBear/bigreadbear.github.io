@@ -1,1 +1,23 @@
-<h1> WIP </h1>
+<h2>Covid-19 index</h2>
+<div class="container">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-8"><canvas id="myChart"></canvas></div>
+    <div class="col-6 col-md-4">DIT MOET NAAR DE ZIJKANT</div>
+  </div>
+<!-- <canvas id="myChart"></canvas> -->
+
+<h2>Click button to call Covid19api</h2>
+<button type="button" onclick="loadContent()">Load Covid-19 Content</button>
+
+<div id="info"></div>
+
+
+<!-- ChartJS: https://www.chartjs.org/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+<!-- Lodash: https://lodash.com/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+
+<!-- Day.js: https://day.js.org/docs/en/installation/browser -->
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
