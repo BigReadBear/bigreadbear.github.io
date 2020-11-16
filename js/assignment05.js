@@ -4,7 +4,10 @@
 
 // Covid19api variables
 var URL = "https://api.covid19api.com/summary";
+
+//local storage
 var covidJson;
+
 var covidJsObj;
 var newConfirmedOver1000;
 //new var to store sorted array
@@ -12,6 +15,8 @@ var totalConfirmedPer100000;
 
 // AJAX variable
 var xhttp;
+
+var timestamp = Date.now();
 
 // Chart.js variables
 
@@ -68,22 +73,9 @@ var chartData = {
 };
 // var myChart = new Chart(ctx, chartData); 
 
-// ---------- loadContent() function ----------
-
-// Note: you can't execute API data dependent code outside the loadContent() function because the code might execute before the AJAX call responds, that is, it might execute before the variable, covidJson, is initialized with data from the API. Example below.
-// console.log(covidJson.Global.NewConfirmed); // error 
-
-// code below modified from: 
-// https://www.w3schools.com/js/js_ajax_intro.asp
-
-function loadContent() {
-  xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 
-        && this.status == 200) {
-      
-      covidJson = this.responseText;
-      covidJsObj = JSON.parse(covidJson);
+//function to call when content loaded
+function createChart() {
+        covidJsObj = JSON.parse(covidJson);
       newConfirmedOver1000 = [];
       
 	    for (let c of covidJsObj.Countries) {
@@ -129,16 +121,46 @@ function loadContent() {
       chartData.options.title.text 
         = "Covid 19 Hotspots as of " + 
         dayjs().format("MMMM D, YYYY");
-      myChart = new Chart(ctx, chartData); 
+      myChart = new Chart(ctx, chartData);
+   }
 
-    } // end if
+
+
+// ---------- loadContent() function ----------
+
+// Note: you can't execute API data dependent code outside the loadContent() function because the code might execute before the AJAX call responds, that is, it might execute before the variable, covidJson, is initialized with data from the API. Example below.
+// console.log(covidJson.Global.NewConfirmed); // error 
+
+// code below modified from: 
+// https://www.w3schools.com/js/js_ajax_intro.asp
+
+function loadContent() {
+  xhttp = new XMLHttpRequest(); 
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 
+        && this.status == 200) {
+      covidJson = this.responseText;
+      timestamp = Date.now();
+      createChart.call(); 
+     } // end if
     
   }; // end xhttp.onreadystatechange = function()
   
-  xhttp.open("GET", URL, true);
-  xhttp.send();
+  // check first if localStaorage is available or 24 hours have past
   
+  let now = Date.now();
+  if (covidJson == undefined || now - timestamp > (24*3600*1000)) {
+    xhttp.open("GET", URL, true);
+    xhttp.send();
+  }
+  else {
+    //we have data so use localDataStorage
+    createChart.call(); 
+  }
+
 } // end function loadContent() 
+
+
 
 // data from: https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population
 var populations = {
