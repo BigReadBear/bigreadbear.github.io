@@ -21,6 +21,7 @@
 <body onload="loadDoc();">
 
     <div class="container">
+              <!--                       initialize angularJS -->
         <div ng-app="myApp" ng-controller="myCtrl">
         <form>
 
@@ -77,8 +78,11 @@
                             </tr>
                         </table>
                         <br />
+                        <!--                       button to poplate the table -->
                         <button type="button" class="btn btn-primary" ng-click="populate();">Re-calculate</button> 
+                                              <!--                       button to save the form  -->
                         <button type="button" class="btn btn-secondary" onclick="saveForm();">Save</button>
+                                              <!--                       button to load the previous form-->
                         <button type="button" class="btn btn-secondary" onclick="loadForm();">Load</button>
                     </div>
                 </div>
@@ -93,11 +97,19 @@
                                     <th>Int Amt</th>
                                     <th>YE Bal</th>
                                 </tr>
+                                <!---display the rows in payment table-->
                                 <tr ng-repeat="x in payments">
                                     <td>{{ x.year }}</td>
                                     <td>{{ x.payment }}</td>
                                     <td>{{ x.amt }}</td>
                                     <td>{{ x.ye }}</td>
+                                </tr>
+                                <!---last row seperate, solely because of the last row bg color -->
+                              <tr ng-repeat="x in lastPaymentRow" ng-style="lastPaymentColor">
+                                    <td>{{ x.lyear }}</td>
+                                    <td>{{ x.lpayment }}</td>
+                                    <td>{{ x.lamt }}</td>
+                                    <td>{{ x.lye }}</td>
                                 </tr>
                             </table>
                         </div>
